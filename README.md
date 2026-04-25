@@ -1,7 +1,9 @@
 # voxyserver
 
 > **⚠️ UNOFFICIAL 1.21.1 BACKPORT ⚠️**
+>
 > This is an unofficial backport of VoxyServer for Minecraft 1.21.1. 
+>
 > All credits for the original mod go to the original author [PooSmacker](https://github.com/PooSmacker/VoxyServer).
 
 A fabric server side mod that voxelizes chunks into LODs using [voxy](https://github.com/MCRcortex/voxy) and streams them to connected clients. players with voxy installed will receive LOD data from the server automatically, no client side world scanning/loading needed.
@@ -12,11 +14,11 @@ A fabric server side mod that voxelizes chunks into LODs using [voxy](https://gi
 
 due to voxy's license, the source and binary can't be included in this repo. you'll need to clone and build it yourself.
 
-Use the [backport voxy for 1.21.1](https://github.com/m3t4f1v3/voxy/tree/mc_1211).
+Uses the [backport voxy for 1.21.1](https://github.com/m3t4f1v3/voxy/tree/mc_1211).
 
 ### windows
 
-*note: please use command prompt (cmd) for these commands, not powershell.*
+Use command prompt (cmd) for these commands, not powershell.
 
 1. clone voxy into the root of this project:
    ```cmd
@@ -87,7 +89,7 @@ higher `lodStreamRadius` means more LOD coverage but more storage and bandwidth.
 
 ### client config
 
-*Note: In this backport, the in-game config UI (ModMenu/ClothConfig integration) was removed for compatibility with Sinytra Connector. Client preferences must be edited manually in the config file.*
+> Note: In this backport, the in-game config UI (ModMenu/ClothConfig integration) was removed for compatibility with Sinytra Connector. Client preferences must be edited manually in the config file.
 
 Client preferences are stored in `config/voxyserver-client.json` with a default profile plus per-server overrides keyed by their `host:port`. if a server has no saved override yet, the default profile is used.
 
